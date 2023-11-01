@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainReportsAnchorPane" prefHeight="792.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="torres.wguappointmentapp.Controllers.MainReportsFormDisplayGUI">
+   <children>
+      <Text fx:id="mainReportsTitleText" layoutX="502.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports" wrappingWidth="274.77732849121094">
+         <font>
+            <Font name="Arial Bold" size="48.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="mainReportsSelectCustomerComboBox" layoutX="34.0" layoutY="146.0" onAction="#onClickSelectCustomerComboBox" prefHeight="25.0" prefWidth="172.0" />
+      <Separator layoutX="40.0" layoutY="78.0" prefHeight="5.0" prefWidth="1115.0" />
+      <Text fx:id="mainReportsSelectCustomerTitleText" layoutX="52.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select Customer">
+         <font>
+            <Font name="Arial Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="mainReportsBackToMainButton" layoutX="947.0" layoutY="723.0" mnemonicParsing="false" onAction="#onClicksBackToMainButton" text="Back To Main">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainReportsLogoutButton" layoutX="1094.0" layoutY="723.0" mnemonicParsing="false" onAction="#onClicksLogoutButton" text="Logout">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="mainReportsContactAppTableView" layoutX="239.0" layoutY="120.0" prefHeight="200.0" prefWidth="888.0">
+        <columns>
+          <TableColumn fx:id="mainReportsAppIDColumn" prefWidth="105.33332824707031" text="Appointment ID" />
+          <TableColumn fx:id="mainReportsTitleColumn" prefWidth="78.66668701171875" text="Title" />
+            <TableColumn fx:id="mainReportsDescriptionColumn" prefWidth="109.66659545898438" text="Description" />
+            <TableColumn fx:id="mainReportsLocationColumn" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="mainReportsContactIDColumn" prefWidth="79.3333740234375" text="Contact ID" />
+            <TableColumn fx:id="mainReportsTypeColumn" prefWidth="81.0" text="Type" />
+            <TableColumn fx:id="mainReportsStartColumn" prefWidth="88.0" text="Start" />
+            <TableColumn fx:id="mainReportsEndColumn" prefWidth="96.0" text="End" />
+            <TableColumn fx:id="mainReportsCustomerIDColumn" prefWidth="79.333251953125" text="Customer ID" />
+            <TableColumn fx:id="mainReportsUserIDColumn" prefWidth="96.33331298828125" text="User ID" />
+        </columns>
+      </TableView>
+      <TableView fx:id="mainReportsTotalByTypeAndMonthTableView" layoutX="657.0" layoutY="396.0" prefHeight="287.0" prefWidth="469.0">
+        <columns>
+          <TableColumn fx:id="mainReportsByTypeAndMonthDateColumn" prefWidth="172.33330535888672" text="Appointment Date (Month)" />
+          <TableColumn fx:id="mainReportsByTypeAndMonthTypeColumn" minWidth="0.0" prefWidth="135.3333282470703" text="Appointment Type " />
+            <TableColumn fx:id="mainReportsByTypeAndMonthTotalColumn" minWidth="0.0" prefWidth="151.33328247070312" text="Total Appointments" />
+        </columns>
+      </TableView>
+      <TableView fx:id="mainReportsTotalCustomerPastAppTableView" layoutX="77.0" layoutY="396.0" prefHeight="287.0" prefWidth="517.0">
+         <columns>
+            <TableColumn fx:id="mainReportsTotalPastCustomerNameColumn" minWidth="0.0" prefWidth="161.99999237060547" text="Customer Name" />
+            <TableColumn fx:id="mainReportsTotalPastCustomerIDColumn" minWidth="0.0" prefWidth="131.3333282470703" text="Customer ID" />
+            <TableColumn fx:id="mainReportsTotalPastNumberOfAppColumn" minWidth="0.0" prefWidth="223.33334350585938" text="Number Of Past Appointments" />
+         </columns>
+      </TableView>
+      <Text fx:id="mainReportsTotalAppTitleText" layoutX="85.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers Total Past Appointments ">
+         <font>
+            <Font name="Arial Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="mainReportsTotalTypeAppTitleText" layoutX="668.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointments Total by Type and Month">
+         <font>
+            <Font name="Arial Bold Italic" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="loginMainUserAnchorPane" prefHeight="310.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="torres.wguappointmentapp.Controllers.MainLoginDisplayGUI">
+   <children>
+      <TextField fx:id="loginUserNameTextField" layoutX="165.0" layoutY="101.0" prefHeight="25.0" prefWidth="208.0" />
+      <Button fx:id="loginButton" layoutX="323.0" layoutY="231.0" mnemonicParsing="false" onAction="#onUserClicksTheLoginButton" text="Login">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="loginUserPasswordTextField" layoutX="165.0" layoutY="152.0" prefHeight="25.0" prefWidth="208.0" />
+      <Label fx:id="loginUserNameLabel" layoutX="45.0" layoutY="104.0" prefHeight="20.0" prefWidth="93.0" text="User Name">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginUserPasswordLabel" layoutX="45.0" layoutY="155.0" prefHeight="20.0" prefWidth="93.0" text="Password">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="UserloginUserAppTitleText" layoutX="80.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment Scheduler Login" wrappingWidth="312.13672637939453">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="loginRegionTitleText" layoutX="31.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Region:">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="loginRegionDisplayTextToUser" layoutX="82.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location Example">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="exitLoginScreen" layoutX="252.0" layoutY="231.0" mnemonicParsing="false" onAction="#onExitLoginScreen" text="Exit">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

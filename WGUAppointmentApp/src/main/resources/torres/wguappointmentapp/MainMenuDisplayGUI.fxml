@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainMenuLoginPane" prefHeight="699.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="torres.wguappointmentapp.Controllers.MainMenuDisplayGUI">
+   <children>
+      <Text fx:id="mainAppTitleText" layoutX="32.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointments" wrappingWidth="277.13670921325684">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="mainMenuCustomerTitle" layoutX="32.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers Record" wrappingWidth="316.13670921325684">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+      <TableView fx:id="mainMenuAppTableView" layoutX="51.0" layoutY="69.0" prefHeight="200.0" prefWidth="814.0">
+        <columns>
+          <TableColumn fx:id="mainMenuAppIdColumn" prefWidth="98.66662979125977" text="Appointment ID" />
+          <TableColumn fx:id="mainMenuAppTitleColumn" prefWidth="62.0" text="Title" />
+            <TableColumn fx:id="mainMenuAppDescriptionColumn" prefWidth="108.99998474121094" text="Description" />
+            <TableColumn fx:id="mainMenuAppLocationColumn" prefWidth="87.0" text="Location" />
+            <TableColumn fx:id="mainMenuAppContactIdColumn" prefWidth="73.3333740234375" text="Contact ID" />
+            <TableColumn fx:id="mainMenuAppTypeColumn" prefWidth="70.33334350585938" text="Type" />
+            <TableColumn fx:id="mainMenuAppStartColumn" prefWidth="82.33331298828125" text="Start" />
+            <TableColumn fx:id="mainMenuAppEndColumn" prefWidth="76.0" text="End" />
+            <TableColumn fx:id="mainMenuAppCustomerIdColumn" prefWidth="76.0" text="Customer ID" />
+            <TableColumn fx:id="mainMenuAppUserIdColumn" text="User ID" />
+        </columns>
+      </TableView>
+      <TableView fx:id="mainMenuCustomerTableView" layoutX="51.0" layoutY="399.0" prefHeight="214.0" prefWidth="646.0">
+         <columns>
+            <TableColumn fx:id="mainMenuCustomerIDColumn" prefWidth="47.333309173583984" text="ID" />
+            <TableColumn fx:id="mainMenuCustomerFullNameColumn" prefWidth="94.33332061767578" text="Full Name" />
+            <TableColumn fx:id="mainMenuCustomerAddressColumn" prefWidth="99.33329772949219" text="Address " />
+            <TableColumn fx:id="mainMenuCustomerCountryColumn" prefWidth="113.0" text="Country" />
+            <TableColumn fx:id="mainMenuCustomerPostalCodeColumn" prefWidth="83.3333740234375" text="Postal Code" />
+            <TableColumn fx:id="mainMenuCustomerPhoneNumberColumn" prefWidth="90.00009155273438" text="Phone #" />
+            <TableColumn fx:id="mainMenuCustomerDivisionColumn" prefWidth="115.33331298828125" text="Division" />
+         </columns>
+      </TableView>
+      <Button fx:id="mainMenuAppAddButton" layoutX="496.0" layoutY="286.0" mnemonicParsing="false" onAction="#onActionMainMenuAddAppButton" text="Add">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainMenuModifyAppButton" layoutX="557.0" layoutY="286.0" mnemonicParsing="false" onAction="#onActionMainMenuModifyButton" text="Modify">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainMenuDeleteAppButton" layoutX="640.0" layoutY="286.0" mnemonicParsing="false" onAction="#onActionMainMenuDeleteAppButton" text="Delete">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="allAppButton" layoutX="222.0" layoutY="31.0" mnemonicParsing="false" onAction="#onActionMainMenuAllAppButton" text="All Appointments">
+         <font>
+            <Font name="Arial Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="allCurrentWeekAppButton" layoutX="348.0" layoutY="30.0" mnemonicParsing="false" onAction="#onActionMainMenuWeekAppButton" text="Current Week Appointments">
+         <font>
+            <Font name="Arial Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="allCurrentMonthAppButton" layoutX="534.0" layoutY="30.0" mnemonicParsing="false" onAction="#onActionMainMenuMonthsAppButton" text="Current Month Appointments">
+         <font>
+            <Font name="Arial Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="mainMenuExitButton" layoutX="766.0" layoutY="433.0" mnemonicParsing="false" onAction="#onActionMainMenuExitButton" prefHeight="45.0" prefWidth="112.0" text="Exit ">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainMenuReportsButton" layoutX="766.0" layoutY="516.0" mnemonicParsing="false" onAction="#onActionMainMenuReportsButton" prefHeight="45.0" prefWidth="112.0" text="Reports">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutX="739.0" layoutY="363.0" orientation="VERTICAL" prefHeight="305.0" prefWidth="10.0" />
+      <Separator layoutX="3.0" layoutY="330.0" prefHeight="11.0" prefWidth="898.0" />
+      <Button fx:id="mainMenuCustomerAddButton" layoutX="499.0" layoutY="625.0" mnemonicParsing="false" onAction="#onActionMainMenuCustomerAddButton" text="Add">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainMenuCustomerModifyButton" layoutX="557.0" layoutY="625.0" mnemonicParsing="false" onAction="#onActionMainMenuModifyCustomerButton" text="Modify">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainMenuCustomerDeleteButton" layoutX="640.0" layoutY="625.0" mnemonicParsing="false" onAction="#onActionMainMenuDeleteCustomerButton" text="Delete">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

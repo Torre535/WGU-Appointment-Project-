@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="modifyCustomerRecordAnchorPane" prefHeight="491.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="torres.wguappointmentapp.Controllers.ModifyCustomerRecordDisplayGUI">
+    <children>
+        <Text fx:id="modifyCustomerRecordTitleText" layoutX="114.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Existing Customer">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+        </Text>
+        <Label fx:id="modifyCustomerRecordIdLabel" layoutX="73.0" layoutY="79.0" text="Customer ID" />
+        <Label fx:id="modifyCustomerRecordNameLabel" layoutX="53.0" layoutY="122.0" text="Customer Name" />
+        <Label fx:id="modifyCustomerRecordAddressLabel" layoutX="51.0" layoutY="167.0" text="Customer Address" />
+        <Label fx:id="modifyCustomerRecordPhoneNumberLabel" layoutX="47.0" layoutY="208.0" text="Customer Phone #" />
+        <Label fx:id="modifyCustomerRecordPostalCodeLabel" layoutX="27.0" layoutY="254.0" text="Customer Postal Code" />
+        <TextField fx:id="modifyCustomerRecordIdAutoGen" disable="true" layoutX="161.0" layoutY="75.0" prefHeight="25.0" prefWidth="265.0" promptText="Disabled - Auto Gen" />
+        <TextField fx:id="modifyCustomerRecordNameTextField" layoutX="161.0" layoutY="118.0" prefHeight="25.0" prefWidth="259.0" />
+        <TextField fx:id="modifyCustomerRecordAddressTextField" layoutX="161.0" layoutY="163.0" prefHeight="25.0" prefWidth="259.0" />
+        <TextField fx:id="modifyCustomerRecordPhoneNumberTextField" layoutX="161.0" layoutY="204.0" prefHeight="25.0" prefWidth="259.0" />
+        <TextField fx:id="modifyCustomerRecordPostalCodeTextField" layoutX="161.0" layoutY="250.0" prefHeight="25.0" prefWidth="259.0" />
+        <Label fx:id="modifyCustomerRecordCountryLabel" layoutX="43.0" layoutY="302.0" text="Customers Country " />
+        <Label fx:id="modifyCustomerRecordStateProvLabel" layoutX="37.0" layoutY="351.0" text="First Level Division" />
+        <ComboBox fx:id="modifyCustomerRecordCountryComboBox" layoutX="161.0" layoutY="298.0" onAction="#onClicksCountryComboBox" prefHeight="25.0" prefWidth="259.0" />
+        <ComboBox fx:id="modifyCustomerRecordDivisionComboBox" layoutX="161.0" layoutY="347.0" onAction="#onClicksDivComboBox" prefHeight="25.0" prefWidth="259.0" />
+        <Button fx:id="modifyCustomerRecordSaveButton" layoutX="193.0" layoutY="415.0" mnemonicParsing="false" onAction="#onClicksSaveButton" text="Save ">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="modifyCustomerRecordCancelButton" layoutX="291.0" layoutY="415.0" mnemonicParsing="false" onAction="#onClicksCancelButton" text="Cancel">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

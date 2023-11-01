@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="createAppAnchorPane" prefHeight="626.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="torres.wguappointmentapp.Controllers.AddCustomerAppointmentDisplayGUI">
+   <children>
+      <Text fx:id="createNewAppText" layoutX="128.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Appointment">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="49.0" layoutY="79.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="122.0" />
+      <Label fx:id="createAppDescriptionLabel" layoutX="47.0" layoutY="167.0" text="Description" />
+      <Label fx:id="createAppTypeLabel" layoutX="47.0" layoutY="208.0" text="Type" />
+      <Label fx:id="createAppLocationLabel" layoutX="46.0" layoutY="254.0" text="Location" />
+      <TextField fx:id="createAppAppIDTextField" disable="true" layoutX="161.0" layoutY="75.0" prefHeight="25.0" prefWidth="245.0" promptText="Disabled - Auto Gen" />
+      <TextField fx:id="createAppDescriptionTextField" layoutX="159.0" layoutY="163.0" prefHeight="25.0" prefWidth="245.0" />
+      <TextField fx:id="createAppTypeTextField" layoutX="161.0" layoutY="204.0" prefHeight="25.0" prefWidth="245.0" />
+      <TextField fx:id="createAppLocationTextField" layoutX="161.0" layoutY="250.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label fx:id="createAppCustomerIDLabel" layoutX="41.0" layoutY="432.0" text="Customers ID" />
+      <Label fx:id="createAppUserIDLabel" layoutX="48.0" layoutY="479.0" text="User ID " />
+      <ComboBox fx:id="createAppCustomerIDComboBox" layoutX="153.0" layoutY="428.0" prefHeight="25.0" prefWidth="258.0" />
+      <ComboBox fx:id="createAppUserIDComboBox" layoutX="155.0" layoutY="475.0" prefHeight="25.0" prefWidth="258.0" />
+      <Button fx:id="createAppSaveButton" layoutX="185.0" layoutY="543.0" mnemonicParsing="false" onAction="#onCreateNewAppSaveButton" text="Save ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="createAppCancelButton" layoutX="300.0" layoutY="543.0" mnemonicParsing="false" onAction="#onCreateNewAppCancelButton" text="Cancel">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="createAppTitleTextField" layoutX="161.0" layoutY="118.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label fx:id="createAppTitleLabel" layoutX="46.0" layoutY="122.0" text="Title" />
+      <Label fx:id="createAppStartTimeDateLabel" layoutX="40.0" layoutY="295.0" text="Start (Date &amp; Time)" />
+      <Label fx:id="createAppEndDateTimeLabel" layoutX="43.0" layoutY="339.0" text="End (Date &amp; Time)" />
+      <Label fx:id="createAppContactIDLabel" layoutX="41.0" layoutY="389.0" text="Contact ID" />
+      <ComboBox fx:id="createAppContactIDComboBox" layoutX="153.0" layoutY="385.0" prefHeight="25.0" prefWidth="258.0" />
+      <Label layoutX="46.0" layoutY="100.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="createAppIDLabel" layoutX="49.0" layoutY="79.0" text="Appointment ID " />
+      <TextField fx:id="createAppStartTimeAndDateTextField" layoutX="157.0" layoutY="291.0" prefHeight="25.0" prefWidth="265.0" promptText="Start (YYYY-MM-DD HH:MM)" />
+      <TextField fx:id="createAppEndTimeaAndDateTextField" layoutX="157.0" layoutY="335.0" prefHeight="25.0" prefWidth="265.0" promptText="End  (YYYY-MM-DD HH:MM)" />
+   </children>
+</AnchorPane>
